@@ -118,6 +118,19 @@
         error.textContent = "Wrong password.";
       }
     }
+
+    function openImage(img) {
+  const overlay = document.getElementById("overlay");
+  const overlayImg = document.getElementById("overlayImg");
+
+  overlayImg.src = img.src;
+  overlay.style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("overlay").style.display = "none";
+}
+
   </script>
 
 </body>
