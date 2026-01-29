@@ -70,6 +70,17 @@
     .content {
       display: none;
       text-align: center;
+      <div class="gallery">
+  <img src="images/person1.jpg" onclick="openImage(this)">
+  <img src="images/person2.png" onclick="openImage(this)">
+  <img src="images/funny3.webp" onclick="openImage(this)">
+</div>
+
+<!-- Fullscreen viewer -->
+<div id="overlay" onclick="closeImage()">
+  <img id="overlayImg">
+</div>
+
     }
   </style>
 </head>
